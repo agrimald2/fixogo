@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::post('/', 'SolicitudController@create')->name('solicitudes.crear');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
